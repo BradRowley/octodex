@@ -9,4 +9,151 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  list-style: none;
+  background-color: #fafbfc;
+  line-height: 1.5;
+  font: 14px;
+}
+
+header {
+  color: #586069;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  display: flex;
+  padding-bottom: 0px;
+  padding-top: 16px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+  line-height: 1px;
+  text-decoration: none;
+  align-items: center;
+}
+.bigtext {
+  font-size: 18px;
+  color: black;
+}
+header a {
+  color: #586069;
+  text-decoration: none;
+}
+header ul {
+  display: flex;
+  padding: 5 rem;
+  list-style: none;
+  font-size: 14px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.twitter {
+  font: Arial, sans-serif;
+  margin-left: 11rem;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+header li {
+  margin-left: 1rem;
+}
+a:hover {
+  text-decoration: underline;
+  display: flex;
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  line-height: 24px;
+  list-style: none;
+}
+/* box-shadow: 2px 2px 0.5rem #7c7c7c; */
+section img {
+  box-shadow: 2px 2px 0.5rem #7c7c7c;
+  height: auto;
+  line-height: 24px;
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+section a {
+  color: #586069;
+  text-decoration: none;
+  font: 16px / 1 Arial, sans-serif;
+  list-style: none;
+}
+section ul {
+  width: 0%;
+  list-style: none;
+  display: flex;
+}
+@media (min-width: 544px) {
+  header {
+    color: #586069;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    display: flex;
+  }
+  .twitter {
+    margin-left: 10rem;
+    font-size: 14px;
+  }
+
+  section {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    padding-left: 16px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 5px;
+  }
+}
+
+@media (min-width: 1020px) {
+  header {
+    color: #586069;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    display: flex;
+  }
+  .twitter {
+    margin-left: 25rem;
+    font-size: 14px;
+    justify-content: flex-start;
+  }
+
+  section {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+    padding-left: 16px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 5px;
+  }
+}
+@media (min-width: 1280px) {
+  header {
+    color: #586069;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    display: flex;
+  }
+  .twitter {
+    margin-left: 42rem;
+    font-size: 14px;
+    justify-content: flex-start;
+  }
+
+  section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2.5rem;
+    padding-left: 16px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 5px;
+  }
 }
